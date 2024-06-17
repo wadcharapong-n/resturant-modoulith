@@ -19,8 +19,8 @@ public class Order {
     private Long id;
     private String orderNo;
     private LocalDateTime createDate;
-    @ManyToMany
-    private List<Item> items;
+    @ManyToMany(targetEntity = OrderItem.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<OrderItem> items;
     private Double totalPrice;
 
     @PrePersist
