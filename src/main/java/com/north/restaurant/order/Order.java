@@ -1,5 +1,6 @@
 package com.north.restaurant.order;
 
+import com.north.restaurant.item.Item;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
